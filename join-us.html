@@ -1,0 +1,102 @@
+
+Mohamed
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>موقعي الشخصي</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <h1>مرحبًا بكم في موقعي!</h1>
+  <p>هذا الموقع يعمل عبر GitHub Pages.</p>
+</body>
+</html><a href="login.html">تسجيل الدخول</a><!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تسجيل الدخول</title>
+  <style>
+    body {
+      background-color: #e2e2e2;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+    input {
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      width: 300px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    p {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>تسجيل الدخول</h1>
+  <form id="loginForm">
+    <input type="text" id="username" placeholder="اسم المستخدم" required><br>
+    <input type="password" id="password" placeholder="كلمة المرور" required><br>
+    <button type="button" onclick="checkLogin()">تسجيل الدخول</button>
+  </form>
+  <p id="error" style="display:none;">اسم المستخدم أو كلمة المرور خاطئة.</p>
+
+  <script>
+    function checkLogin() {
+      // بيانات الدخول الصحيحة
+      const correctUsername = "admin";
+      const correctPassword = "12345";
+
+      // الحصول على القيم المدخلة من المستخدم
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      // التحقق من البيانات المدخلة
+      if (username === correctUsername && password === correctPassword) {
+        // إعادة التوجيه إلى الصفحة الرئيسية أو صفحة أخرى إذا كانت البيانات صحيحة
+        alert("تم تسجيل الدخول بنجاح!");
+        window.location.href = "index.html"; // أو أي صفحة أخرى ترغب فيها
+      } else {
+        // عرض رسالة الخطأ إذا كانت البيانات خاطئة
+        document.getElementById("error").style.display = "block";
+      }
+    }
+  </script>
+</body>
+</<p>ليس لديك حساب؟ <a href="signup.html">سجّل ا<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>صفحة التسجيل</title>
+</head>
+<body>
+  <h1>مرحبًا بك! أنشئ حسابك</h1>
+</body>
+</html>لآن</a></p>
